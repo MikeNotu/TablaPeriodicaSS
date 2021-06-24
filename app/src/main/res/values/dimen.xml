@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="txtvSmall">16dp</dimen>
+    <dimen name="txtvMedium">20dp</dimen>
+    <dimen name="txtvBig">28dp</dimen>
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtv_MasaAtomica"
+        style="@style/txtv_small"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:text="55.845"
+        app:layout_constraintEnd_toStartOf="@+id/txtv_NumeroAtomico"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtv_EnrgIon"
+        style="@style/txtv_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:text="762.5"
+        app:layout_constraintEnd_toStartOf="@+id/txtv_Electromagnetividad"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_MasaAtomica" />
+
+    <TextView
+        android:id="@+id/txtv_Electromagnetividad"
+        style="@style/txtv_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="8dp"
+        android:text="1.83"
+        app:layout_constraintStart_toEndOf="@+id/txtv_EnrgIon"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_NumeroAtomico" />
+
+    <TextView
+        android:id="@+id/txtv_NumeroAtomico"
+        style="@style/txtv_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtv_MasaAtomica"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtv_SimboloQuimico"
+        style="@style/txtv_Big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="11dp"
+        android:text="FE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_EnrgIon" />
+
+    <TextView
+        android:id="@+id/txtv_Nombre"
+        style="@style/txtv_Medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="15dp"
+        android:text="Hierro"
+        app:layout_constraintBottom_toTopOf="@+id/txtv_CofElec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_SimboloQuimico" />
+
+    <TextView
+        android:id="@+id/txtv_CofElec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="AR 3d"
+        style="@style/txtv_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtv_Nombre" />
+</android.support.constraint.ConstraintLayout>
